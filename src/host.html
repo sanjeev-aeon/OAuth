@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div>
+        host
+    </div>
+    <iframe src="" width="100%" height="100%" id="iframe">
+
+    </iframe>
+    <script>
+        const CLIENT_URL="https://test03.cloud.teamcenter.com/awc"
+        const popup = window.open("https://test03.cloud.teamcenter.com/awc", "popup", "popup = true");
+        const checkPopup = setInterval(() => {
+            if (popup.window.location.href
+                .includes(CLIENT_URL)) {
+                popup.close()
+            }
+            if (!popup || !popup.closed) return;
+            clearInterval(checkPopup);
+        }, 1000);
+    </script>
+</body>
+
+</html>

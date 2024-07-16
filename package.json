@@ -1,0 +1,12 @@
+{
+    "name": "oauth_sample",
+    "version": "1.0.0",
+    "description": "My awesome app",
+    "scripts": {
+    },
+    "license": "MIT",
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}
